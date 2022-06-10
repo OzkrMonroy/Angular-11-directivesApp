@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
   path: 'product',
-  loadChildren: () => import(/*webpackChunkName: "Product"* */'./products/products.module').then(m => m.ProductsModule)
+  loadChildren: () => import(/*webpackChunkName: "ProductModule" */'./products/products.module').then(m => m.ProductsModule)
 }, {
   path: '**',
   redirectTo: 'product'
